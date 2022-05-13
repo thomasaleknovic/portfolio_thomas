@@ -9,9 +9,9 @@ function Home() {
     <>
         <div className='flex flex-col items-center pt-16 pb-[300px]' id='home'>
             <div className='text-center p-10 mt-16'>
-                <p className='text text-[25px] md:text-[40px] md:-mb-5'>Olá, eu sou</p>
-                <p className='text text-[50px] md:text-[85px] font-bold md:-mb-5'>Thomas <span className='text-mainPurple'>Aleknovic.</span></p>
-                <p className='text text-[25px] md:text-[40px] text-mainPurple typewriter'>Front-end Developer e UI Designer.</p>
+                <p className='text text-[20px] sm:text-[25px] md:text-[40px] md:-mb-5'>Olá, eu sou</p>
+                <p className='leading-[50px] mb-2 md:mb-0 text-[50px] md:text-[85px] font-bold md:-mb-5'>Thomas <span className='text-mainPurple '>Aleknovic.</span></p>
+                <p className='text text-[20px] sm:text-[25px] md:text-[40px] text-mainPurple typewriter'>Front-end Developer e UI Designer.</p>
             </div>
             <a href="#tecnologias">
                 <FontAwesomeIcon className="fa-xl mr-3 animate-bounce" icon={faChevronDown} height={50}/>

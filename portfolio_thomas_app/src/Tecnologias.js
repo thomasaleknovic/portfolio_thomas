@@ -21,15 +21,15 @@ function Tecnologias() {
   return (
     <>
       <div id='tecnologias' className='pb-[100px] pt-[100px]'>
-        <h2 className='text-[30px] text-center mb-20 leading-[50px]'>Possuo experiência com essas
+        <h2 className='text-[20px] md:text-[30px] text-center mb-20 leading-[50px]'>Possuo experiência com essas
           <br />
           <span className='text-[50px] font-bold text-mainPurple'>tecnologias</span>
         </h2>
-        <div className='w-3/4 mx-auto'>
+        <div className='w-4/5 md:w-3/4 mx-auto'>
           <div className='flex flex-row flex-wrap w-full justify-center'>
             {tecnologias.map((item) => 
               <a key={item.id} className="mx-2 my-2 ">
-                <img src={item.url} alt={item.id} />
+                <img src={item.url} alt={item.id} className="w-full" />
               </a>
             )}
           </div>
