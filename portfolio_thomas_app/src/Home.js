@@ -23,7 +23,7 @@ function Home() {
                         <FontAwesomeIcon className="fa-2xl mr-3" icon={faGithub} height={50}/>
                     </a>
                 </div>
-            <a href="#tecnologias" className='mt-20 md:mt-0 flex flex-col items-center animate-bounce transition-all easy-in duration-150'>
+            <a href="#tecnologias" className='mt-20 md:mt-30 flex flex-col items-center animate-bounce transition-all easy-in duration-150'>
                 <p className=' text-white text-xs font-extrabold'>DESCUBRA</p>
                 <FontAwesomeIcon className="fa-xl text-mainPurple" icon={faChevronDown} height={50}/>
             </a>
