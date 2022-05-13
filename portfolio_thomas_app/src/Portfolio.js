@@ -53,6 +53,7 @@ function Portfolio() {
             showIndicators={false}
             showThumbs={false}
             interval={5000}
+            swipeable={false}
             >
             {portfolioItems.map((item) => 
                 <div key={item.id} className="mr-0 md:mr-20 grid grid-cols-12 mx-auto w-full px-14 md:px-[100px]">
@@ -67,8 +68,9 @@ function Portfolio() {
                         
             )}
             </Carousel>
-            <a href="#certificados" className='flex justify-center mt-20'>
-                <FontAwesomeIcon className="fa-xl mr-3 animate-bounce" icon={faChevronDown} height={50}/>
+            <a href="#certificados" className='mt-20 md:mt-0 flex flex-col items-center animate-bounce transition-all easy-in duration-150'>
+                <p className=' text-white text-xs font-extrabold'>CERTIFICADOS</p>
+                <FontAwesomeIcon className="fa-xl text-mainPurple" icon={faChevronDown} height={50}/>
             </a>
 
     </div>

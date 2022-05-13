@@ -44,7 +44,7 @@ function Header({purple}) {
 
   return (
     <div className="">
-        <header className='shadow-md w-full fixed z-10 top-0 left-0'>
+        <header className='w-full fixed z-10 top-0 left-0'>
             <div className={`transition-all duration-500 easy-in ${headerPurple? "bg-mainPurple p-5 lg:flex flex-row justify-around" : "bg-mainBlack p-5 lg:flex flex-row justify-around"}`}>
                 <a href='#' className='text-white font-bold text-xl'>
                     Thomas Aleknovic
