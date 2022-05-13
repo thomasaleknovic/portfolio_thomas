@@ -68,7 +68,7 @@ function Portfolio() {
                         
             )}
             </Carousel>
-            <a href="#certificados" className='mt-20 md:mt-0 flex flex-col items-center animate-bounce transition-all easy-in duration-150'>
+            <a href="#certificados" className='mt-20 flex flex-col items-center animate-bounce transition-all easy-in duration-150'>
                 <p className=' text-white text-xs font-extrabold'>CERTIFICADOS</p>
                 <FontAwesomeIcon className="fa-xl text-mainPurple" icon={faChevronDown} height={50}/>
             </a>
