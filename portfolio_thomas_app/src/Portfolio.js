@@ -3,43 +3,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { portfolioItems } from './shared/portfolioData';
 
 function Portfolio() {
 
 
-    const portfolioItems = [
-        {
-            id: "weather",
-            path: "/portfolio/weather.png",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl a neque adipiscing nullam. Sit tristique risus non lectus vestibulum suspendisse turpis. Metus convallis orci feugiat in vel augue et sed. Adipiscing diam ipsum, vulputate bibendum nec. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl a neque adipiscing nullam. Sit tristique risus non lectus vestibulum suspendisse turpis. Metus convallis orci feugiat in vel augue et sed. Adipiscing diam ipsum, vulputate bibendum nec. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl a neque adipiscing nullam. Sit tristique risus non lectus vestibulum suspendisse turpis.",
-            url: "https://thomas-weatherforecast.vercel.app/"
-        
-        },
-        {
-            id: "analaura",
-            path: "/portfolio/analaura.png",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl a neque adipiscing nullam. Sit tristique risus non lectus vestibulum suspendisse turpis. Metus convallis orci feugiat in vel augue et sed. Adipiscing diam ipsum, vulputate bibendum nec. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl a neque adipiscing nullam. Sit tristique risus non lectus vestibulum suspendisse turpis. Metus convallis orci feugiat in vel augue et sed. Adipiscing diam ipsum, vulputate bibendum nec. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl a neque adipiscing nullam. Sit tristique risus non lectus vestibulum suspendisse turpis.",
-            url: "https://portfolio-ana-laura.vercel.app/"
-        
-        },
-        {
-            id: "findmovie",
-            path: "/portfolio/findmovie.png",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl a neque adipiscing nullam. Sit tristique risus non lectus vestibulum suspendisse turpis. Metus convallis orci feugiat in vel augue et sed. Adipiscing diam ipsum, vulputate bibendum nec. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl a neque adipiscing nullam. Sit tristique risus non lectus vestibulum suspendisse turpis. Metus convallis orci feugiat in vel augue et sed. Adipiscing diam ipsum, vulputate bibendum nec. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl a neque adipiscing nullam. Sit tristique risus non lectus vestibulum suspendisse turpis.",
-            url: "https://findmovie.vercel.app/"
-        
-        },
-        {
-            id: "amzclone",
-            path: "/portfolio/amzclone.png",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl a neque adipiscing nullam. Sit tristique risus non lectus vestibulum suspendisse turpis. Metus convallis orci feugiat in vel augue et sed. Adipiscing diam ipsum, vulputate bibendum nec. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl a neque adipiscing nullam. Sit tristique risus non lectus vestibulum suspendisse turpis. Metus convallis orci feugiat in vel augue et sed. Adipiscing diam ipsum, vulputate bibendum nec. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl a neque adipiscing nullam. Sit tristique risus non lectus vestibulum suspendisse turpis.",
-            url: "https://amazonclone-eight.vercel.app/"
-            
-        
-        },
-    ]
   return (
-    <div id='portfolio' className='pb-[400px] pt-[100px]'>
+    <div id='portfolio' className='pb-[100px] pt-[100px]'>
 
         <h2 className='text-[25px] text-center mb-20 leading-[60px]'>Confira um pouco do meu
           <br />

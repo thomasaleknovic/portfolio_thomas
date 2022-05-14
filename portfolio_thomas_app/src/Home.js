@@ -9,7 +9,7 @@ import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 function Home() {
   return (
     <>
-        <div className='flex flex-col items-center pt-16 pb-[300px]' id='home'>
+        <div className='flex flex-col items-center pt-16 md:pb-[100px] pb-[300px]' id='home'>
             <div className='text-center p-2 md:p-10 mt-16 md:mb-0 mb-5'>
                 <p className='text-[20px] sm:text-[25px] md:text-[40px] '>Olá, eu sou</p>
                 <p className='leading-[50px] md:leading-none mb-2 md:mb-0 text-[50px] md:text-[85px] font-bold '>Thomas <span className='text-mainPurple '>Aleknovic.</span></p>

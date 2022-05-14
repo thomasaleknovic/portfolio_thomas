@@ -1,4 +1,5 @@
 import { Route, Routes } from "react-router-dom";
+import Certificados from "./Certificados";
 import Header from "./HeaderComponent";
 import Home from "./Home";
 import Portfolio from "./Portfolio";
@@ -19,6 +20,7 @@ function Main() {
         <Home />
         <Tecnologias />
         <Portfolio />
+        <Certificados />
       </div>
     
     </div>
