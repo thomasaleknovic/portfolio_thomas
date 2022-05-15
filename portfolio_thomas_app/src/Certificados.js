@@ -1,10 +1,12 @@
 import React from 'react'
 import { certificadosData } from './shared/certificadosData';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
 function Certificados() {
   return (
     
-    <div id='certificados' className='pb-[200px]'>
+    <div id='certificados' className=''>
         <h2 className='text text-[50px] text-mainPurple font-bold text-center mb-10'>Certificados</h2>
 
         <div className='grid grid-cols-9  w-11/12 mx-auto gap-4'>
@@ -18,6 +20,10 @@ function Certificados() {
                 </div>   
             )}
         </div>
+        <a href="#contato" className='mt-20 flex flex-col items-center animate-bounce transition-all easy-in duration-150'>
+                <p className=' text-white text-xs font-extrabold'>CONTATO</p>
+                <FontAwesomeIcon className="fa-xl text-mainPurple" icon={faChevronDown} height={50}/>
+            </a>
     </div>
   )
 }
