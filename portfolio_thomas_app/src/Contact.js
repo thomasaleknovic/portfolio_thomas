@@ -21,12 +21,12 @@ function Contact () {
           <div className='bg-mainPurple w-5/6 md:w-2/4 rounded-md p-10'>
             <form ref={form} onSubmit={sendEmail} className="flex flex-col items-center text-mainBlack">
                 <label className='text-white font-bold'>Nome</label>
-                <input type="text" name="user_name" className='md:w-[400px] mb-6 mt-3 p-2 rounded-md'/>
+                <input type="text" name="user_name" className='md:w-[400px] text-center mb-6 mt-3 p-3 rounded-md'/>
                 <label className='text-white font-bold'>Email</label>
-                <input type="email" name="user_email" className='md:w-[400px] mb-6 mt-3 p-2 rounded-md' />
+                <input type="email" name="user_email" className='md:w-[400px] text-center mb-6 mt-3 p-3 rounded-md' />
                 <label className='text-white font-bold'>Mensagem</label>
-                <textarea name="message" className='md:w-[400px] h-[200px] mb-6 mt-3 p-2 rounded-lg'/>
-                <input type="submit" value="Enviar" className='bg-white rounded-full text-mainPurple w-3/4 md:w-2/4 p-2 font-bold'/>
+                <textarea name="message" className='md:w-[400px] h-[200px] text-center mb-6 mt-3 p-3 rounded-lg'/>
+                <input type="submit" value="Enviar" className='bg-white rounded-full cursor-pointer text-mainPurple w-3/4 md:w-2/4 p-2 font-bold'/>
             </form>
         </div>
     </div>
