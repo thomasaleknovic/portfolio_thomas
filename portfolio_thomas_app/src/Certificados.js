@@ -13,7 +13,8 @@ function Certificados() {
             {certificadosData.map((item) =>
                 <div key={item.id} className="md:col-span-3 col-span-9 flex flex-col mx-auto items-center justify-start mb-10 md:mb-0 md:w-full w-5/6  ">
                     <img src={item.image} />
-                    <p className='w-11/12 text-center text-sm md:text-base mt-7'>{item.description}</p>
+                    <h2 className='w-11/12 text-center text-base md:text-[20px] mt-7 font-bold'>{item.title}</h2>
+                    <p className='w-11/12 text-center text-sm md:text-base mt-5'>{item.description}</p>
                     <button className='bg-mainPurple rounded-full w-5/6 md:w-3/5 mt-10 p-3 font-bold'>
                         <a href={item.url} target="_blank">Conferir</a>
                     </button>
