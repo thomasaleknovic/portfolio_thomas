@@ -9,9 +9,9 @@ function Contact () {
 
     emailjs.sendForm('service_t100zmf', 'template_kas4clh', form.current, 'fa43rj5b0dL1JZ-lC')
       .then((result) => {
-          console.log(result.text);
+          alert('Mensagem enviada!');
       }, (error) => {
-          console.log(error.text);
+          alert('Recarregue a página e tente novamente!');
       });
   };
 
