@@ -62,10 +62,10 @@ function Header({purple}) {
                     <FontAwesomeIcon name={menuOpen ? 'close':'menu'} className="fa-lg mr-3 text-white" icon={faBars} height={50}/>
                 </div>
                     <div className="text-white hidden lg:block">
-                    <a href="https://www.linkedin.com/in/ana-laura-nazari-a12683155/" target='_blank'>
+                    <a href="https://www.linkedin.com/in/thomasaleknovic/" target='_blank'>
                         <FontAwesomeIcon className={`fa-xl mr-3 ${!headerPurple? 'hover:text-mainPurple' : 'hover:text-mainBlack'}`} icon={faLinkedin} height={50}/>
                     </a>
-                    <a href="https://www.linkedin.com/in/ana-laura-nazari-a12683155/" target='_blank'>
+                    <a href="https://github.com/thomasaleknovic" target='_blank'>
                         <FontAwesomeIcon className={`fa-xl mr-3 ${!headerPurple? 'hover:text-mainPurple' : 'hover:text-mainBlack'}`} icon={faGithub} height={50}/>
                     </a>
                 </div>
