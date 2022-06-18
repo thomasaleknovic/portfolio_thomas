@@ -83,6 +83,7 @@ function Header({ purple }) {
             <a
               href="https://www.linkedin.com/in/thomasaleknovic/"
               target="_blank"
+              rel="noreferrer"
             >
               <FontAwesomeIcon
                 className={`fa-xl mr-3 ${
@@ -94,7 +95,11 @@ function Header({ purple }) {
                 height={30}
               />
             </a>
-            <a href="https://github.com/thomasaleknovic" target="_blank">
+            <a
+              href="https://github.com/thomasaleknovic"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FontAwesomeIcon
                 className={`fa-xl mr-3 ${
                   !headerPurple

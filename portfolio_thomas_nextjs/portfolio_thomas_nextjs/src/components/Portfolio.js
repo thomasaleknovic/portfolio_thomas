@@ -41,7 +41,7 @@ function Portfolio() {
                 {item.description}
               </p>
               <button className="bg-mainPurple rounded-full w-5/6 md:w-2/5 mt-10 p-3 font-bold">
-                <a href={item.url} target="_blank">
+                <a href={item.url} target="_blank" rel="noreferrer">
                   Conferir
                 </a>
               </button>

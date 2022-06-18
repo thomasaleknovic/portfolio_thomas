@@ -25,6 +25,7 @@ function Home() {
           <a
             href="https://www.linkedin.com/in/thomasaleknovic/"
             target="_blank"
+            rel="noreferrer"
           >
             <FontAwesomeIcon
               className="fa-2xl mr-3"
@@ -32,7 +33,11 @@ function Home() {
               height={50}
             />
           </a>
-          <a href="https://www.github.com/thomasaleknovic" target="_blank">
+          <a
+            href="https://www.github.com/thomasaleknovic"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FontAwesomeIcon
               className="fa-2xl mr-3"
               icon={faGithub}
