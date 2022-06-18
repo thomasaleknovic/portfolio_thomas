@@ -1,6 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import Image from "next/image";
 
 function Tecnologias() {
   const tecnologias = [
@@ -29,11 +30,12 @@ function Tecnologias() {
         <div className="mx-auto">
           <div className="flex flex-row flex-wrap w-full justify-center">
             {tecnologias.map((item) => (
-              <a key={item.id} className="mr-0 my-2 ">
-                <img
+              <a key={item.id} className="mr-2 my-2 ">
+                <Image
                   src={item.url}
                   alt={item.id}
                   width={100}
+                  height={100}
                   className="w-4/4 p-2"
                 />
               </a>

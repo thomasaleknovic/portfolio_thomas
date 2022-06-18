@@ -4,6 +4,7 @@ import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { portfolioItems } from "../../public/portfolio/portfolioData";
+import Image from "next/image";
 
 function Portfolio() {
   return (
@@ -33,7 +34,7 @@ function Portfolio() {
               alt={item.id}
               width={480}
               height={347}
-              className="col-span-12 md:col-span-4"
+              className="col-span-12 md:col-span-4 mr-10"
             />
             <div className="md:ml-10 mt-10 md:mt-0 col-span-12 md:col-span-8 flex flex-col md:items-start items-center">
               <p className="text-sm md:text-base text-center md:text-left">
