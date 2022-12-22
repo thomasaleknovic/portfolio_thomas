@@ -2,13 +2,15 @@ import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 function Contact() {
-  const form = useRef();
-  const [nameError, setNameError] = useState(null);
-  const [emailError, setEmailError] = useState(null);
-  const [email, setEmail] = useState(false);
-  const [name, setName] = useState(false);
+  const form = useRef<
+    string | HTMLFormElement | React.RefObject<HTMLElement>
+  >();
+  const [nameError, setNameError] = useState<string | null>(null);
+  const [emailError, setEmailError] = useState<string | null>(null);
+  const [email, setEmail] = useState<boolean>(false);
+  const [name, setName] = useState<boolean>(false);
 
-  const sendEmail = (e) => {
+  const sendEmail = (e: any) => {
     e.preventDefault();
 
     if (email && name) {
@@ -16,7 +18,7 @@ function Contact() {
         .sendForm(
           "service_31qmlfw",
           "template_kas4clh",
-          form.current,
+          JSON.stringify(form.current),
           "fa43rj5b0dL1JZ-lC"
         )
         .then(
@@ -32,7 +34,7 @@ function Contact() {
     }
   };
 
-  function validateName(value) {
+  function validateName(value: string) {
     if (value.length === 0) {
       setNameError("Preencha seu nome");
       setName(false);
@@ -42,7 +44,7 @@ function Contact() {
     }
   }
 
-  function validateEmail(value) {
+  function validateEmail(value: string) {
     if (value.length === 0) {
       setEmailError("Preencha seu email");
     } else if (
@@ -58,7 +60,7 @@ function Contact() {
     }
   }
 
-  function handleBlur({ target }) {
+  function handleBlur({ target }: React.ChangeEvent<HTMLInputElement>) {
     if (target.name === "user_name") {
       validateName(target.value);
     } else if (target.name === "user_email") {

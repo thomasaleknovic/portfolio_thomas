@@ -21,7 +21,7 @@ function Home() {
             Front-end Developer e UI Designer.
           </p>
         </div>
-        <div className="text-white block lg:hidden mb-10">
+        <div className="text-white flex flex-row lg:hidden mb-10">
           <a
             href="https://www.linkedin.com/in/thomasaleknovic/"
             target="_blank"

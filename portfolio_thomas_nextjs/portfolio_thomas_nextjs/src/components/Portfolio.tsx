@@ -6,6 +6,13 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { portfolioItems } from "../../public/portfolio/portfolioData";
 import Image from "next/image";
 
+interface PortfolioItem {
+  id: string;
+  path: string;
+  description: string;
+  url: string;
+}
+
 function Portfolio() {
   return (
     <div id="portfolio" className="pb-[100px] pt-[100px]">
@@ -24,7 +31,7 @@ function Portfolio() {
         interval={5000}
         swipeable={false}
       >
-        {portfolioItems.map((item) => (
+        {portfolioItems.map((item: PortfolioItem) => (
           <div
             key={item.id}
             className="mr-0 md:mr-20 grid grid-cols-12 mx-auto w-full px-14 md:px-[100px]"

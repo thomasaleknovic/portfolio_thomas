@@ -3,11 +3,16 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
-function Header({ purple }) {
-  const [menuOpen, setMenuOpen] = React.useState(false);
-  const [headerPurple, setHeaderPurple] = React.useState(false);
+interface Link {
+  name: string;
+  link: string;
+}
 
-  let Links = [
+function Header() {
+  const [menuOpen, setMenuOpen] = React.useState<boolean>(false);
+  const [headerPurple, setHeaderPurple] = React.useState<boolean>(false);
+
+  let Links: Link[] = [
     { name: "Home", link: "#home" },
     { name: "Tecnologias", link: "#tecnologias" },
     { name: "Portfólio", link: "#portfolio" },
@@ -54,7 +59,10 @@ function Header({ purple }) {
             }`}
           >
             {Links.map((link) => (
-              <li key={link.name} className="lg:ml-8 text-xl lg:my-0 my-3">
+              <li
+                key={link.name}
+                className="lg:ml-8 text-xl lg:my-0 my-3 w-max"
+              >
                 <a
                   href={link.link}
                   className={`font-bold text-lg ${
