@@ -2,9 +2,7 @@ import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 function Contact() {
-  const form = useRef<
-    string | HTMLFormElement | React.RefObject<HTMLElement>
-  >();
+  const form = useRef<any>();
   const [nameError, setNameError] = useState<string | null>(null);
   const [emailError, setEmailError] = useState<string | null>(null);
   const [email, setEmail] = useState<boolean>(false);

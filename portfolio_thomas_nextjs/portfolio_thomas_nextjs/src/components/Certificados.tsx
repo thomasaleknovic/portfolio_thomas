@@ -25,7 +25,7 @@ function Certificados() {
           >
             <img src={item.image} />
             <h2 className="w-11/12 text-center text-base md:text-[20px] mt-7 font-bold">
-              <a href={item.url} target="_blank">
+              <a href={item.url} target="_blank" rel="noreferrer">
                 {item.title}
               </a>
             </h2>
