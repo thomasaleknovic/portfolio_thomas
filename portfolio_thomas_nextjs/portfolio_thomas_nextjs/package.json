@@ -17,8 +17,10 @@
     "@types/node": "^18.11.17",
     "@types/react": "^18.0.26",
     "next": "12.1.6",
+    "nodemailer": "^6.8.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-hook-form": "^7.41.5",
     "react-responsive-carousel": "^3.2.23",
     "yarn": "^1.22.19"
   },
