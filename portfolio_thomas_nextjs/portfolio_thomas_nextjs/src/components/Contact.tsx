@@ -1,12 +1,5 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import { useForm } from "react-hook-form";
-
-interface FormData {
-  nome: string;
-  email: string;
-  text: string;
-}
 
 function Contact() {
   const form = useRef<any>();
@@ -18,24 +11,22 @@ function Contact() {
   const sendEmail = (e: any) => {
     e.preventDefault();
 
-    const formData: any = {
-      nome: e.target[0].value,
-      email: e.target[1].value,
-      text: e.target[2].value,
-    };
-
     if (email && name) {
-      fetch("/api/contato", {
-        method: "POST",
-        body: JSON.stringify(formData),
-      }).then(
-        (result) => {
-          alert("Mensagem enviada!");
-        },
-        (error) => {
-          alert("Recarregue a página e tente novamente!");
-        }
-      );
+      emailjs
+        .sendForm(
+          "service_31qmlfw",
+          "template_kas4clh",
+          JSON.stringify(form.current),
+          "fa43rj5b0dL1JZ-lC"
+        )
+        .then(
+          (result) => {
+            alert("Mensagem enviada!");
+          },
+          (error) => {
+            alert("Recarregue a página e tente novamente!");
+          }
+        );
     } else {
       alert("Preencha os campos solicitados!");
     }
