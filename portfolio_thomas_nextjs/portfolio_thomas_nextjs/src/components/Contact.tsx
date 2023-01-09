@@ -11,19 +11,21 @@ function Contact() {
   const sendEmail = (e: any) => {
     e.preventDefault();
 
+    const formData = form.current;
+
     if (email && name) {
       emailjs
         .sendForm(
           "service_31qmlfw",
           "template_kas4clh",
-          JSON.stringify(form.current),
+          formData,
           "fa43rj5b0dL1JZ-lC"
         )
         .then(
-          (result) => {
+          () => {
             alert("Mensagem enviada!");
           },
-          (error) => {
+          () => {
             alert("Recarregue a página e tente novamente!");
           }
         );
