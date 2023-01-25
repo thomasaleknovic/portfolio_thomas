@@ -18,7 +18,7 @@ function Home() {
             Thomas <span className="text-mainPurple ">Aleknovic.</span>
           </p>
           <p className="text-[17px] sm:text-[25px] md:text-[40px] text-mainPurple typewriter">
-            Front-end Developer e UI Designer.
+            Full-stack Developer e UI Designer.
           </p>
         </div>
         <div className="text-white flex flex-row lg:hidden mb-10">
