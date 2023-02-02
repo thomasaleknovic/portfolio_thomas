@@ -4,12 +4,20 @@ import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { portfolioItems } from "../../public/portfolio/portfolioData";
-import Image from "next/image";
+import PortfolioItemSmall from "./PortfolioItemSmall";
 
-interface PortfolioItem {
+export interface PortfolioItem {
   id: string;
   path: string;
+  title: string;
   description: string;
+  url: string;
+  tecnologias: TecnologiasItem[];
+}
+
+export interface TecnologiasItem {
+  title: string;
+  path: string;
   url: string;
 }
 
@@ -22,40 +30,12 @@ function Portfolio() {
         <span className="text-[70px] font-bold text-mainPurple">portfólio</span>
       </h2>
 
-      <Carousel
-        autoPlay
-        infiniteLoop
-        showStatus={false}
-        showIndicators={false}
-        showThumbs={false}
-        interval={5000}
-        swipeable={false}
-      >
+      <div className=" flex-row gap-14 flex-wrap items-center justify-center sm:hidden md:flex">
         {portfolioItems.map((item: PortfolioItem) => (
-          <div
-            key={item.id}
-            className="mr-0 md:mr-20 grid grid-cols-12 mx-auto w-full px-14 md:px-[100px]"
-          >
-            <img
-              src={item.path}
-              alt={item.id}
-              width={480}
-              height={347}
-              className="col-span-12 md:col-span-4 mr-10"
-            />
-            <div className="md:ml-10 mt-10 md:mt-0 col-span-12 md:col-span-8 flex flex-col md:items-start items-center">
-              <p className="text-sm md:text-base text-center md:text-left">
-                {item.description}
-              </p>
-              <button className="bg-mainPurple rounded-full w-5/6 md:w-2/5 mt-10 p-3 font-bold">
-                <a href={item.url} target="_blank" rel="noreferrer">
-                  Conferir
-                </a>
-              </button>
-            </div>
-          </div>
+          <PortfolioItemSmall item={item} key={item.id} />
         ))}
-      </Carousel>
+      </div>
+
       <a
         href="#certificados"
         className="mt-20 flex flex-col items-center animate-bounce transition-all easy-in duration-150"
