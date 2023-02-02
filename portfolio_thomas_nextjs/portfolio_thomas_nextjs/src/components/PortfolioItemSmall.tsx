@@ -45,10 +45,16 @@ function PortfolioItemSmall({ item }) {
         </div>
       </div>
       <Dialog.Portal>
-        <Dialog.Overlay className="w-screen h-screen bg-black/80 fixed inset-0" />
+        <Dialog.Overlay className="w-screen h-screen bg-black/80 fixed inset-0 z-20" />
 
-        <Dialog.Content className="w-screen h-screen md:w-fit md:h-fit  fixed  top-[3%] right-0 md:top-[20%] md:right-[18%]  flex flex-col md:flex-row justify-center items-center ">
-          <div className="w-[90%] md:h-[500px] md:w-[350px] bg-mainPurple rounded-3xl flex flex-col items-center justify-center overflow-clip z-50 relative py-6 md:py-0">
+        <Dialog.Content className="w-screen h-screen md:w-fit md:h-fit  fixed  top-[4%] right-0 md:top-[20%] md:right-[18%]  flex flex-col md:flex-row justify-center items-center z-50">
+          <div className="w-[90%] md:h-[500px] md:w-[350px] bg-mainPurple rounded-3xl flex flex-col items-center justify-center  z-50 relative py-6 md:py-0 overflow-visible">
+            <Dialog.Close
+              className="absolute w-8 h-8 bg-zinc-800 md:bg-mainPurple rounded-full -top-2 -right-2 z-50 font-extrabold  md:hidden"
+              aria-label="Fechar"
+            >
+              X
+            </Dialog.Close>
             <div className="w-[90%] md:w-full flex justify-center">
               <img src={item.path} width={324} height={190} />
             </div>
@@ -72,14 +78,14 @@ function PortfolioItemSmall({ item }) {
               ))}
             </div>
           </div>
-          <div className="w-[90%] h-[350px] md:w-[500px] md:h-[500px] bg-[#292929] rounded-3xl -mt-10 md:mt-0 md:-ml-10 flex flex-col justify-center items-center md:items-start gap-4 py-10 overflow-scroll">
+          <div className="w-[90%] h-[350px] md:w-[500px] md:h-[500px] bg-[#292929] rounded-3xl -mt-10 md:mt-0 md:-ml-10 flex flex-col  md:justify-center items-center md:items-start gap-4 py-10  overflow-scroll">
             <Dialog.Close
-              className="absolute w-8 h-8 bg-zinc-800 md:bg-mainPurple rounded-full top-16 right-4 md:-top-2 md:-right-2 z-50 font-extrabold"
+              className="absolute w-8 h-8 bg-mainPurple rounded-full  md:-top-2 md:-right-2 z-50 font-extrabold hidden md:block"
               aria-label="Fechar"
             >
               X
             </Dialog.Close>
-            <p className="w-[90%] md:w-[380px] md:ml-20 mt-[180px] md:mt-0 font-medium text-sm md:text-md">
+            <p className="w-[90%] sm:h-[350px] md:h-fit md:w-[380px] md:ml-20 mt-[20px] md:mt-0 font-medium text-sm md:text-md">
               {item.description}
             </p>
             <a
